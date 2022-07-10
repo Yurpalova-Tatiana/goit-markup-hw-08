@@ -1,0 +1,42 @@
+body {
+  font-family: $main-font-family;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.title-text {
+  @include font(28px, 700, 33px);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .title-text {
+    @include font(36px, 700, 42px);
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}

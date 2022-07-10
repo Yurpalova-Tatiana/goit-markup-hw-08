@@ -1,0 +1,42 @@
+.logo {
+  font-family: $sec-font-family;
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.header__logo {
+  font-family: $sec-font-family;
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo,
+  .header__logo,
+  .footer-logo-link {
+    @include font(26px, 700, 31px);
+  }
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
+// .header__logo {
+//   font-family: $sec-font-family;
+//   @include font(26px, 700, 31px);
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+//   margin-right: 93px;
+// }
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: $sec-font-family;
+  font-style: normal;
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer__logo {
+  color: #ffffff;
+}

@@ -1,0 +1,98 @@
+.team {
+  background: #f5f4fa;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: var(--title-color);
+    margin-bottom: var(--tipical-margin);
+  }
+}
+.team-wrapper {
+  background-color: #fff;
+  border: 1px solid #f5f4fa;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item__img {
+  width: 100%;
+}
+
+.team-item__info {
+  padding: var(--tipical-margin);
+}
+.team-item__title {
+  @include font(16px, 500, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.team-item__text {
+  @include font(16px, 400, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: var(--tipical-margin);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .team {
+    margin-bottom: -30px;
+  }
+  .team__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .team__item {
+    width: 354px;
+    margin-bottom: var(--tipical-margin);
+
+    &:nth-child(2n) {
+      margin-left: var(--tipical-margin);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .team__item {
+    margin-bottom: 0;
+  }
+  .team__item:not(:first-child) {
+    margin-left: var(--tipical-margin);
+    width: 270px;
+  }
+}
+//   .team__title {
+//
+//     margin-bottom: 55px;
+//   }
+// }
+
+// .team__item:not(:nth-child(4n)) {
+//   margin-right: var(--tipical-margin);
+// }
+
+// .team-wrapper {
+//   background-color: #fff;
+//   border: 1px solid #f5f4fa;
+//   padding: var(--tipical-margin);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+// }
